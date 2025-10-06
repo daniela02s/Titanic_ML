@@ -1,5 +1,4 @@
-# **Titanic - Machine Learning from Disaster**
-### Data Science Challenge from Kaggle
+# Data Science Challenge from Kaggle
 
 The "Titanic: Machine Learning from Disaster" dataset from Kaggle is a classic example for learning and practicing Machine Learning, specifically for **classification tasks**. This project offers a comprehensive view of the field, enabling the development of essential skills in exploring real data, manipulating information, and creating a predictive model.
 
@@ -17,13 +16,13 @@ This project followed a standard Data Science workflow:
 
 ---
 
-### **1. Problem Understanding and Environment Setup**
+### **Problem Understanding and Environment Setup**
 1.  **Project Goal**: The objective is to build a model that can accurately predict whether a passenger survived the Titanic's sinking, using the data provided in the `train.csv` and `test.csv` files.
 2.  **Understanding the Variables**: Familiarize yourself with the description of each variable in the dataset, such as `PassengerId`, `Survived`, `Pclass`, `Name`, `Sex`, `Age`, `SibSp`, `Parch`, `Ticket`, `Fare`, `Cabin`, and `Embarked`.
 
 ---
 
-### **2. Data Exploration**
+### **Data Exploration**
 The initial data analysis revealed crucial information about the passengers:
 * **Data and Missing Values**: The training set has 891 entries, and a large number of missing values were identified in the `Cabin` column, with fewer in `Age` and `Embarked`.
 * **Key Correlations**:
@@ -33,7 +32,7 @@ The initial data analysis revealed crucial information about the passengers:
 
 ---
 
-### **3. Preprocessing and Feature Engineering**
+### **Preprocessing and Feature Engineering**
 This phase was dedicated to cleaning and transforming the data to make it suitable for the model:
 * **Handling Missing Values**:
     * **`Embarked`**: The most frequent port of embarkation (`S`) was identified and used to fill the two missing values.
@@ -48,7 +47,7 @@ This phase was dedicated to cleaning and transforming the data to make it suitab
 
 ---
 
-### **4. Modeling and Evaluation**
+### **Modeling and Evaluation**
 In this stage, several classification models were trained and evaluated using accuracy to determine the best-performing one.
 
 | Model | Training Accuracy |
@@ -66,7 +65,7 @@ In this stage, several classification models were trained and evaluated using ac
 **Modeling Conclusion**:
 The **Random Forest** model achieved the highest training accuracy, making it the most robust and reliable choice for the final Kaggle submission. While the high accuracy could indicate overfitting, Random Forest is an ensemble model that generally handles this problem well.
 
-### **Observations and Interpretations from the Data**
+### **Observations:**
 
 * **Sex and Survival**: The `Sex` variable is the strongest factor for predicting survival. Women had a significantly higher survival probability than men, confirming the historical "women and children first" protocol.
 * **Socioeconomic Status and Survival**: The passenger class (`Pclass`) is a crucial indicator of survival. There is a clear inverse correlation: the higher the class, the higher the survival rate. This suggests access to lifeboats was influenced by socioeconomic status.
